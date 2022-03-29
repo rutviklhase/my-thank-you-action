@@ -1,0 +1,16 @@
+name: 'thank you action'
+description: 'says thank you during pull requests'
+author: 'rutvik lhase'
+
+inputs:
+  GITHUB_TOKEN:
+      description: 'Github Token'
+      required: true
+  TENOR_TOKEN:
+      description: 'Tenor Token'
+      required: true
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+  
